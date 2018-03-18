@@ -1,0 +1,16 @@
+#!/bin/python3
+
+import sys
+
+def birthdayCakeCandles(n, ar):
+    numbersof_candle = 0
+    maximum_candle = max(ar)
+    for i in range(n):
+        if ar[i]/maximum_candle == 1:
+            numbersof_candle += 1
+    
+    return numbersof_candle
+n = int(input().strip())
+ar = list(map(int, input().strip().split(' ')))
+result = birthdayCakeCandles(n, ar)
+print(result)
