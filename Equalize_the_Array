@@ -1,0 +1,17 @@
+#!/bin/python3
+
+import sys
+
+def equalizeArray(arr):
+    mylist = []
+    i = 0
+    while i < n : 
+        mylist.append(arr.count(arr[i]))
+        i += 1
+    result = len(mylist) - max(mylist)        
+    return result 
+if __name__ == "__main__":
+    n = int(input().strip())
+    arr = list(map(int, input().strip().split(' ')))
+    result = equalizeArray(arr)
+    print(result)
